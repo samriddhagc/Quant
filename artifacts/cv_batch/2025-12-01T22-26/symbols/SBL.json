@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Too many zero-volume days (17.4% > 15.4%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Too many zero-volume days (17.4% > 15.4%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SBL",
+  "updated_at": "2025-12-01T22:33:23.571771"
+}

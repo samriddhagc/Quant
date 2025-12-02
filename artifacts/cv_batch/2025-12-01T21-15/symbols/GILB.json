@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Median volume too low (1,715 < 2,000).; Zero-volume days exceed limit (14.7% > 14.1%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Median volume too low (1,715 < 2,000).; Zero-volume days exceed limit (14.7% > 14.1%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "GILB",
+  "updated_at": "2025-12-01T21:19:54.460205"
+}

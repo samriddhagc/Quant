@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (54.4% > 15.0%).; Median volume too low (1,247 < 2,949).; Median liquidity too low (830,502 < 1,837,353).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (54.4% > 15.0%).; Median volume too low (1,247 < 2,949).; Median liquidity too low (830,502 < 1,837,353)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SIC",
+  "updated_at": "2025-12-01T01:45:00.821112"
+}

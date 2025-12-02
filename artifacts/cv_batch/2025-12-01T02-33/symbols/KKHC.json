@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (53.2% > 15.0%).; Median volume too low (3,978 < 8,154).; Median liquidity too low (547,662 < 2,870,280).",
+    "prob_edge": 0.0,
+    "probability": 0.5,
+    "warnings": [
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (53.2% > 15.0%).; Median volume too low (3,978 < 8,154).; Median liquidity too low (547,662 < 2,870,280).",
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (53.2% > 15.0%).; Median volume too low (3,978 < 8,154).; Median liquidity too low (547,662 < 2,870,280)."
+    ]
+  },
+  "probability_backtest": null,
+  "regime_info": {
+    "metrics": {
+      "median_flat_pct": 0.465622001918772,
+      "median_liquidity": 3682771.4,
+      "median_zero_volume_pct": 0.00036258158085569254,
+      "monitor": 172,
+      "total": 175,
+      "tradable": 1,
+      "tradable_ratio": 0.005714285714285714
+    },
+    "position_multiplier": 0.0,
+    "reason": "Tradable breadth 1% < 20%",
+    "state": "FROZEN"
+  },
+  "signal_history": null,
+  "symbol": "KKHC",
+  "symbol_health": {
+    "first_trade": "2017-01-11T00:00:00",
+    "flat_close_pct": 0.5316319194823867,
+    "healthy": false,
+    "median_liquidity": 547661.9750000001,
+    "median_volume": 3978.5,
+    "missing_close_pct": 0.0,
+    "position_multiplier": 0.0,
+    "reasons": [
+      "Flat sessions exceed limit (53.2% > 15.0%).",
+      "Median volume too low (3,978 < 8,154).",
+      "Median liquidity too low (547,662 < 2,870,280)."
+    ],
+    "symbol": "KKHC",
+    "tier": "tier3",
+    "tier_reason": "Flat sessions exceed limit (53.2% > 15.0%).; Median liquidity too low (547,662 < 2,870,280).",
+    "trading_days": 2782,
+    "zero_volume_pct": 0.0003594536304816679
+  },
+  "updated_at": "2025-12-01T02:35:51.113075"
+}

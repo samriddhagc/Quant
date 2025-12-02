@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Data / logs (adjust for your project)
+*.log
+*.csv
+*.parquet
+
+# Secrets
+.env

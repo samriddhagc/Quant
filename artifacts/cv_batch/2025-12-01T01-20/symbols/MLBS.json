@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Flat sessions exceed limit (28.2% > 15.0%).; Median volume too low (841 < 5,000).; Median liquidity too low (966,050 < 2,000,000).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Flat sessions exceed limit (28.2% > 15.0%).; Median volume too low (841 < 5,000).; Median liquidity too low (966,050 < 2,000,000)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "MLBS",
+  "updated_at": "2025-12-01T01:22:39.322119"
+}

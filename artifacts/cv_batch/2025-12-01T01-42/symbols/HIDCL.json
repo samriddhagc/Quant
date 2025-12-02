@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (33.3% > 15.0%).; Median liquidity too low (7,256,134 < 9,901,477).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (33.3% > 15.0%).; Median liquidity too low (7,256,134 < 9,901,477)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "HIDCL",
+  "updated_at": "2025-12-01T01:45:00.799602"
+}

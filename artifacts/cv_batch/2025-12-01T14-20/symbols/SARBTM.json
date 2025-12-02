@@ -1,0 +1,596 @@
+{
+  "coefficients": null,
+  "component_confidence": null,
+  "component_probs": null,
+  "contributions": null,
+  "cross_sectional_signal": null,
+  "cv_metrics": null,
+  "disabled_reason": "Validation skipped (insufficient history).",
+  "drift_alert": null,
+  "feature_importance": null,
+  "latest_factors": [
+    {
+      "name": "FracDiff_d0.45",
+      "value": 50.81382063786407
+    },
+    {
+      "name": "Sharpe_6d_Z",
+      "value": 1.3592617723218907
+    },
+    {
+      "name": "Sharpe_12d_Z",
+      "value": 2.048182195995074
+    },
+    {
+      "name": "ADX_Z",
+      "value": 0.020310987118969143
+    },
+    {
+      "name": "Efficiency_Z",
+      "value": 0.7279103136480319
+    },
+    {
+      "name": "Liquidity_Z",
+      "value": -0.729846042886497
+    },
+    {
+      "name": "SmartMoney_Z",
+      "value": -0.6028744967713634
+    },
+    {
+      "name": "Vol_Regime_Z",
+      "value": 1.0416388748837186
+    },
+    {
+      "name": "Roll_Skew",
+      "value": 0.30326890285173963
+    },
+    {
+      "name": "Roll_Kurt",
+      "value": -0.425156340980069
+    },
+    {
+      "name": "Trend_Strength",
+      "value": -0.017970353619017554
+    },
+    {
+      "name": "Trend_Slope",
+      "value": -0.0018931748771743178
+    },
+    {
+      "name": "RSI",
+      "value": 67.52922710527513
+    },
+    {
+      "name": "Volume_Z",
+      "value": -0.5989962408872214
+    },
+    {
+      "name": "Range_Compression_Z",
+      "value": -1.2668917335665497
+    },
+    {
+      "name": "BB_Width_Z",
+      "value": -0.041865232565977996
+    },
+    {
+      "name": "Dist_MA_Z",
+      "value": 0.7306234255340525
+    },
+    {
+      "name": "BB_Position",
+      "value": 0.8304457111298177
+    },
+    {
+      "name": "Price_Range_Pos",
+      "value": 0.6471035026730158
+    },
+    {
+      "name": "Dist_SMA200_Z",
+      "value": -0.7171782657855498
+    },
+    {
+      "name": "Regime_Intensity_Z",
+      "value": -1.0581334627342014
+    },
+    {
+      "name": "Regime_Tag",
+      "value": -1.0
+    },
+    {
+      "name": "ATR_Z",
+      "value": -0.5803666768170639
+    },
+    {
+      "name": "Vol_Ratio_Z",
+      "value": 1.0126864730286917
+    },
+    {
+      "name": "Autocorr_Z",
+      "value": -0.15026253112891216
+    },
+    {
+      "name": "Drawdown_Z",
+      "value": 0.4894533692005427
+    },
+    {
+      "name": "XSec_FracDiff_d0.45",
+      "value": 2.8420851539617438
+    },
+    {
+      "name": "XSec_Sharpe_6d_Z",
+      "value": -0.20123211753471923
+    },
+    {
+      "name": "XSec_Sharpe_12d_Z",
+      "value": -0.15883757450074865
+    },
+    {
+      "name": "XSec_ADX_Z",
+      "value": -0.283628000619443
+    },
+    {
+      "name": "XSec_Efficiency_Z",
+      "value": -0.24008400182289133
+    },
+    {
+      "name": "XSec_Liquidity_Z",
+      "value": -0.32979090042322223
+    },
+    {
+      "name": "XSec_SmartMoney_Z",
+      "value": -0.3219773700198597
+    },
+    {
+      "name": "XSec_Vol_Regime_Z",
+      "value": -0.22077788382543512
+    },
+    {
+      "name": "XSec_Roll_Skew",
+      "value": -0.2662154357960981
+    },
+    {
+      "name": "XSec_Roll_Kurt",
+      "value": -0.31104101257607736
+    },
+    {
+      "name": "XSec_Trend_Strength",
+      "value": -0.28598374431863777
+    },
+    {
+      "name": "XSec_Trend_Slope",
+      "value": -0.284994392540675
+    },
+    {
+      "name": "XSec_RSI",
+      "value": 3.870711965509344
+    },
+    {
+      "name": "XSec_Volume_Z",
+      "value": -0.32173871127158166
+    },
+    {
+      "name": "XSec_Range_Compression_Z",
+      "value": -0.362839429487509
+    },
+    {
+      "name": "XSec_BB_Width_Z",
+      "value": -0.2874541789856886
+    },
+    {
+      "name": "XSec_Dist_MA_Z",
+      "value": -0.23991704329668798
+    },
+    {
+      "name": "XSec_BB_Position",
+      "value": -0.23377421455040803
+    },
+    {
+      "name": "XSec_Price_Range_Pos",
+      "value": -0.24505666297155168
+    },
+    {
+      "name": "XSec_Dist_SMA200_Z",
+      "value": -0.3290113552058117
+    },
+    {
+      "name": "XSec_Regime_Intensity_Z",
+      "value": -0.34999293634783435
+    },
+    {
+      "name": "XSec_Regime_Tag",
+      "value": -0.34641553973871897
+    },
+    {
+      "name": "XSec_ATR_Z",
+      "value": -0.3205922917018651
+    },
+    {
+      "name": "XSec_Vol_Ratio_Z",
+      "value": -0.22255954656063953
+    },
+    {
+      "name": "XSec_Autocorr_Z",
+      "value": -0.2941246938677855
+    },
+    {
+      "name": "XSec_Drawdown_Z",
+      "value": -0.2547580815072003
+    },
+    {
+      "name": "Sector_RelStrength_Z",
+      "value": 1.4093366398565097
+    },
+    {
+      "name": "Sector_Spread_Z",
+      "value": 2.1165396471659754
+    },
+    {
+      "name": "Sector_Vol_Spread_Z",
+      "value": -1.4118981657743253
+    },
+    {
+      "name": "Sector_Spread_PctRank",
+      "value": 1.0
+    },
+    {
+      "name": "Sector_Momentum_Spread_Z",
+      "value": 2.7933968959853357
+    },
+    {
+      "name": "Sector_Beta_Raw",
+      "value": 0.018803530869710136
+    },
+    {
+      "name": "Sector_Corr_Raw",
+      "value": 0.1569947928882735
+    },
+    {
+      "name": "Sector_Beta_Z",
+      "value": 0.4736232125282346
+    },
+    {
+      "name": "Sector_Corr_Z",
+      "value": 0.9598640683375401
+    },
+    {
+      "name": "Sector_Trend_Interaction",
+      "value": 0.6674945469025877
+    },
+    {
+      "name": "Sector_Corr_Interaction",
+      "value": 1.352771600789828
+    },
+    {
+      "name": "Sector_Drawdown_Z",
+      "value": 1.5840834494865483
+    },
+    {
+      "name": "Macro_gdp_current_usd_Z",
+      "value": 0.32379846656630185
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Beta_Z",
+      "value": 0.4829453571929441
+    },
+    {
+      "name": "Macro_gdp_current_usd_Corr_Z",
+      "value": 0.48256531436832245
+    },
+    {
+      "name": "Macro_gdp_current_usd_Spread_Z",
+      "value": 1.5412178126483607
+    },
+    {
+      "name": "Macro_gdp_current_usd_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_FX_Shock",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_FX_Carry",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Z",
+      "value": 0.3237984665663876
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Beta_Z",
+      "value": 0.4829453571929422
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Corr_Z",
+      "value": 0.48256531436832223
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Spread_Z",
+      "value": 1.5412178126483589
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_FX_Shock",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_FX_Carry",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Spread_Z",
+      "value": 1.54121781264836
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Spread_Z",
+      "value": 1.54121781264836
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Z",
+      "value": 0.3237984665663388
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Beta_Z",
+      "value": 0.4829453571929447
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Corr_Z",
+      "value": 0.48256531436832234
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Spread_Z",
+      "value": 1.5412178126483587
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_FX_Shock",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_FX_Carry",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Z",
+      "value": 0.3237984665663373
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Beta_Z",
+      "value": 0.48294535719294723
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Corr_Z",
+      "value": 0.48256531436832234
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Spread_Z",
+      "value": 1.5412178126483713
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Z",
+      "value": -0.32379846656633277
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Beta_Z",
+      "value": -0.48294535719294324
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Corr_Z",
+      "value": -0.48256531436832245
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Spread_Z",
+      "value": 1.5412178126483578
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationCarry_Z",
+      "value": -0.483142529710374
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationSensitivity_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Z",
+      "value": 0.32379846656633504
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Beta_Z",
+      "value": -0.48294535719294324
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Corr_Z",
+      "value": -0.48256531436832223
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Spread_Z",
+      "value": 1.5412178126483944
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Z",
+      "value": 0.3237984665663083
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Beta_Z",
+      "value": 0.48294535719294623
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Corr_Z",
+      "value": 0.48256531436832234
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Spread_Z",
+      "value": 1.5412178126483587
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 0.0
+    }
+  ],
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Neutral probability (insufficient validated data).",
+    "prob_edge": null,
+    "probability": 0.5,
+    "warnings": [
+      "Insufficient valid folds after QC.",
+      "Dataset rejected for modeling; probability neutralized at 50%.",
+      "Please collect additional history or relax horizon to proceed.",
+      "Validation skipped (insufficient history).",
+      "Insufficient valid folds after QC.; Dataset rejected for modeling; probability neutralized at 50%.; Please collect additional history or relax horizon to proceed."
+    ]
+  },
+  "position_multiplier": null,
+  "probability_backtest": null,
+  "sector_rank_snapshot": null,
+  "signal_history": null,
+  "symbol": "SARBTM",
+  "symbol_health": {
+    "first_trade": "2024-03-19T00:00:00",
+    "flat_close_pct": 0.19101123595505617,
+    "healthy": true,
+    "median_liquidity": 34793889.660000004,
+    "median_volume": 41495.0,
+    "missing_close_pct": 0.0,
+    "reasons": [],
+    "symbol": "SARBTM",
+    "tier": "standard",
+    "trading_days": 445,
+    "zero_volume_pct": 0.0
+  },
+  "updated_at": "2025-12-01T14:37:57.915688",
+  "validation_equity": null,
+  "validation_metrics": null
+}

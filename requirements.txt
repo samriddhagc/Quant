@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly
+scipy
+scikit-learn
+statsmodels
+arch
+requests 
+beautifulsoup4
+tqdm
+numba
+pytest

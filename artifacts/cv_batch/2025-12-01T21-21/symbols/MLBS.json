@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Median volume too low (694 < 761).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Median volume too low (694 < 761)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "MLBS",
+  "updated_at": "2025-12-01T21:32:39.716483"
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (42.9% > 15.0%).; Median volume too low (3,901 < 12,200).; Median liquidity too low (2,545,043 < 5,727,672).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (42.9% > 15.0%).; Median volume too low (3,901 < 12,200).; Median liquidity too low (2,545,043 < 5,727,672)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "LICN",
+  "updated_at": "2025-12-01T01:55:37.590219"
+}

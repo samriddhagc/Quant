@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (50.0% > 15.0%).; Median volume too low (4,846 < 4,992).; Median liquidity too low (845,002 < 998,147).",
+    "prob_edge": 0.0,
+    "probability": 0.5,
+    "warnings": [
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (50.0% > 15.0%).; Median volume too low (4,846 < 4,992).; Median liquidity too low (845,002 < 998,147).",
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (50.0% > 15.0%).; Median volume too low (4,846 < 4,992).; Median liquidity too low (845,002 < 998,147)."
+    ]
+  },
+  "probability_backtest": null,
+  "regime_info": {
+    "metrics": {
+      "median_flat_pct": 0.465622001918772,
+      "median_liquidity": 3682771.4,
+      "median_zero_volume_pct": 0.00036258158085569254,
+      "monitor": 172,
+      "total": 175,
+      "tradable": 1,
+      "tradable_ratio": 0.005714285714285714
+    },
+    "position_multiplier": 0.0,
+    "reason": "Tradable breadth 1% < 20%",
+    "state": "FROZEN"
+  },
+  "signal_history": null,
+  "symbol": "GRDBL",
+  "symbol_health": {
+    "first_trade": "2016-11-24T00:00:00",
+    "flat_close_pct": 0.500177116542685,
+    "healthy": false,
+    "median_liquidity": 845002.0,
+    "median_volume": 4846.0,
+    "missing_close_pct": 0.0,
+    "position_multiplier": 0.0,
+    "reasons": [
+      "Flat sessions exceed limit (50.0% > 15.0%).",
+      "Median volume too low (4,846 < 4,992).",
+      "Median liquidity too low (845,002 < 998,147)."
+    ],
+    "symbol": "GRDBL",
+    "tier": "tier3",
+    "tier_reason": "Flat sessions exceed limit (50.0% > 15.0%).",
+    "trading_days": 2823,
+    "zero_volume_pct": 0.00035423308537017357
+  },
+  "updated_at": "2025-12-01T02:35:51.112956"
+}

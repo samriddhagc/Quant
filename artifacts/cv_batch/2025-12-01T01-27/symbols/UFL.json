@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Flat sessions exceed limit (76.1% > 15.0%).; Median volume too low (4,524 < 5,254).; Median liquidity too low (1,913,652 < 2,312,943).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Flat sessions exceed limit (76.1% > 15.0%).; Median volume too low (4,524 < 5,254).; Median liquidity too low (1,913,652 < 2,312,943)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "UFL",
+  "updated_at": "2025-12-01T01:29:42.024438"
+}

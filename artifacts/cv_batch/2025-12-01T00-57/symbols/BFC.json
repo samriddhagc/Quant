@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Flat sessions exceed limit (40.7% > 15.0%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Flat sessions exceed limit (40.7% > 15.0%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "BFC",
+  "updated_at": "2025-12-01T01:00:01.882245"
+}

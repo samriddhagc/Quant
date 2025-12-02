@@ -1,0 +1,66 @@
+"""
+Configuration constants for risk, drift, and utility settings.
+UPDATED: Quarterly Institutional Settings (63 Days)
+"""
+
+# Trading days
+NEPSE_TRADING_DAYS = 240  
+PERIODS_PER_YEAR = NEPSE_TRADING_DAYS
+
+# Risk-free rate
+R_F_ANNUAL = 0.06
+
+# Drift & Utility
+DRIFT_SHRINKAGE_ALPHA = 0.05
+RECENT_DRIFT_WINDOW = 126
+LONG_DRIFT_WINDOW = 756
+RISK_AVERSION_LAMBDA = 0.35
+NO_TRADE_UTILITY_THRESHOLD = 0.005
+
+# Limits
+MAX_POS_ER = 0.60
+MAX_NEG_ER = -0.40
+MAX_DRAWDOWN_THRESHOLD = -0.30
+
+# System
+BLOCK_BOOTSTRAP_SIZE = 30
+STOCH_VOL_LOOKBACK = 252
+FACTOR_CV_FOLDS = 5
+AUTOCORRELATION_WINDOW = 21
+
+# Stress
+ES_PENALTY_STRESSED = 1.15
+STRESS_ALLOC_CAP = 1.0
+
+# === TRIPLE BARRIER CONFIGURATION (YIELD HUNTER MODE) ===
+# Horizon: 63 Trading Days (~1 Quarter)
+TRIPLE_BARRIER_HORIZON = 63
+
+# Profit Target: 1.25x Volatility to register dividend-driven pops.
+TRIPLE_BARRIER_PT_MULT = 1.25
+
+# Stop Loss: 2.5x Volatility to keep value names from getting shaken out.
+TRIPLE_BARRIER_SL_MULT = 2.5
+
+__all__ = [
+    "NEPSE_TRADING_DAYS",
+    "PERIODS_PER_YEAR",
+    "R_F_ANNUAL",
+    "DRIFT_SHRINKAGE_ALPHA",
+    "RECENT_DRIFT_WINDOW",
+    "LONG_DRIFT_WINDOW",
+    "BLOCK_BOOTSTRAP_SIZE",
+    "STOCH_VOL_LOOKBACK",
+    "FACTOR_CV_FOLDS",
+    "MAX_DRAWDOWN_THRESHOLD",
+    "AUTOCORRELATION_WINDOW",
+    "RISK_AVERSION_LAMBDA",
+    "NO_TRADE_UTILITY_THRESHOLD",
+    "MAX_POS_ER",
+    "MAX_NEG_ER",
+    "ES_PENALTY_STRESSED",
+    "STRESS_ALLOC_CAP",
+    "TRIPLE_BARRIER_SL_MULT",
+    "TRIPLE_BARRIER_PT_MULT",
+    "TRIPLE_BARRIER_HORIZON"
+]

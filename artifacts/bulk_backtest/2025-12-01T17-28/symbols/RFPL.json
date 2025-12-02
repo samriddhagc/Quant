@@ -1,0 +1,12 @@
+{
+  "AI Daily Return": -0.022341344632659924,
+  "Beats Market": false,
+  "Components": "{\"Institutional GBDT\": 0.9565202066890175, \"Ridge Logistic\": 0.6738837545205051}",
+  "Confidence": 53.9,
+  "Market Return": 0.000899689598344507,
+  "Probability": 50.0,
+  "Profit Factor": 0.14,
+  "Symbol": "RFPL",
+  "Trades": 11,
+  "Win Rate": 45.5
+}

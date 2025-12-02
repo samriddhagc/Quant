@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (48.7% > 15.0%).; Zero-volume days exceed limit (0.1% > 0.1%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (48.7% > 15.0%).; Zero-volume days exceed limit (0.1% > 0.1%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "NICLBSL",
+  "updated_at": "2025-12-01T02:43:19.410157"
+}

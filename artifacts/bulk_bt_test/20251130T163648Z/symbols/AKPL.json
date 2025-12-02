@@ -1,0 +1,12 @@
+{
+  "AI Daily Return": 0.0,
+  "Beats Market": false,
+  "Components": "{\"Institutional GBDT\": 0.5397278828713393, \"Logistic (Short History)\": 0.21690573758003256, \"Random Forest Ensemble\": 0.5545610304174482}",
+  "Confidence": 53.2,
+  "Market Return": 0.00019876539886753495,
+  "Probability": 49.5,
+  "Profit Factor": 0.0,
+  "Symbol": "AKPL",
+  "Trades": 0,
+  "Win Rate": 0.0
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Volume effectively zero (Median 3,154 < 7,824).; Liquidity too low for sizing (1,965,850 < 2,291,942).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Volume effectively zero (Median 3,154 < 7,824).; Liquidity too low for sizing (1,965,850 < 2,291,942)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "LICN",
+  "updated_at": "2025-12-01T22:46:31.885837"
+}

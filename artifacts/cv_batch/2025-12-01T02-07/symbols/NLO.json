@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Insufficient trading history (0 < 750).; Flat sessions exceed limit (100.0% > 15.0%).; Missing close percentage too high (100.0% > 25.0%).; Median volume too low (10 < 500).; Median liquidity too low (0 < 7,866,192).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Insufficient trading history (0 < 750).; Flat sessions exceed limit (100.0% > 15.0%).; Missing close percentage too high (100.0% > 25.0%).; Median volume too low (10 < 500).; Median liquidity too low (0 < 7,866,192)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "NLO",
+  "updated_at": "2025-12-01T02:09:21.740497"
+}

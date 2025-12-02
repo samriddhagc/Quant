@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Flat sessions exceed limit (100.0% > 65.0%).; Too many zero-volume days (96.3% > 45.0%).; Volume effectively zero (Median 0 < 200).; Liquidity too low for sizing (0 < 452,855).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Flat sessions exceed limit (100.0% > 65.0%).; Too many zero-volume days (96.3% > 45.0%).; Volume effectively zero (Median 0 < 200).; Liquidity too low for sizing (0 < 452,855)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "NLO",
+  "updated_at": "2025-12-01T23:43:07.246520"
+}

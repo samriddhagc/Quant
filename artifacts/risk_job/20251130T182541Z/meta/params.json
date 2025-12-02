@@ -1,0 +1,13 @@
+{
+  "artifacts_dir": "artifacts",
+  "horizon_days": 240,
+  "job_name": "risk_job",
+  "limit": 2,
+  "sims": 100000,
+  "slack_webhook": null,
+  "symbols": [
+    "SHIVM",
+    "NABIL"
+  ],
+  "symbols_file": null
+}

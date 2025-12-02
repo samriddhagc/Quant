@@ -1,0 +1,13 @@
+{
+  "backtest": null,
+  "meta": {
+    "cv_score": 0.5875,
+    "cv_std": 0.1100780972764337,
+    "prob_edge": null,
+    "probability": 0.11293867338486296,
+    "warning": "No Valid Training Data (fallback engaged) Using fallback logistic model (short history)."
+  },
+  "series": null,
+  "symbol": "CLI",
+  "updated_at": "2025-11-30T16:19:08.665029"
+}

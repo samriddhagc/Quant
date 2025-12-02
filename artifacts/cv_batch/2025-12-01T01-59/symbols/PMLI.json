@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (53.5% > 15.0%).; Median volume too low (11,824 < 12,200).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (53.5% > 15.0%).; Median volume too low (11,824 < 12,200)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "PMLI",
+  "updated_at": "2025-12-01T02:01:25.113062"
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Volume effectively zero (Median 4,520 < 6,440).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Volume effectively zero (Median 4,520 < 6,440)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SIKLES",
+  "updated_at": "2025-12-01T22:46:31.885887"
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (58.8% > 15.0%).; Median volume too low (4,327 < 4,362).; Median liquidity too low (1,000,647 < 1,096,206).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (58.8% > 15.0%).; Median volume too low (4,327 < 4,362).; Median liquidity too low (1,000,647 < 1,096,206)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SIFC",
+  "updated_at": "2025-12-01T01:55:37.604765"
+}

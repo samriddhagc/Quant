@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Too many zero-volume days (22.4% > 15.4%).; Volume effectively zero (Median 4,153 < 15,650).; Liquidity too low for sizing (1,504,812 < 4,764,301).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Too many zero-volume days (22.4% > 15.4%).; Volume effectively zero (Median 4,153 < 15,650).; Liquidity too low for sizing (1,504,812 < 4,764,301)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "HBL",
+  "updated_at": "2025-12-01T22:46:31.885797"
+}

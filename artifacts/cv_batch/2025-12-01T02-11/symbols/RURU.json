@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (43.1% > 15.0%).; Median volume too low (2,211 < 8,154).; Median liquidity too low (1,596,383 < 2,870,280).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (43.1% > 15.0%).; Median volume too low (2,211 < 8,154).; Median liquidity too low (1,596,383 < 2,870,280)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "RURU",
+  "updated_at": "2025-12-01T02:14:01.512268"
+}

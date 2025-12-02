@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Volume effectively zero (Median 2,840 < 2,850).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Volume effectively zero (Median 2,840 < 2,850)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "GFCL",
+  "updated_at": "2025-12-01T22:33:23.571653"
+}

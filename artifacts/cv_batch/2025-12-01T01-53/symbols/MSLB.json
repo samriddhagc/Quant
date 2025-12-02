@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (53.0% > 15.0%).; Median volume too low (749 < 1,084).; Median liquidity too low (763,932 < 972,829).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (53.0% > 15.0%).; Median volume too low (749 < 1,084).; Median liquidity too low (763,932 < 972,829)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "MSLB",
+  "updated_at": "2025-12-01T01:55:37.594971"
+}

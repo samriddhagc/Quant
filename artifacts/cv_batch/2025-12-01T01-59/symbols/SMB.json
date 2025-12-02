@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (48.2% > 15.0%).; Median volume too low (380 < 1,084).; Median liquidity too low (279,287 < 972,829).; Zero-volume days exceed limit (0.1% > 0.1%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (48.2% > 15.0%).; Median volume too low (380 < 1,084).; Median liquidity too low (279,287 < 972,829).; Zero-volume days exceed limit (0.1% > 0.1%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SMB",
+  "updated_at": "2025-12-01T02:01:25.120125"
+}

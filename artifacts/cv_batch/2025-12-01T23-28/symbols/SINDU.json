@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Liquidity too low for sizing (440,622 < 556,129).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Liquidity too low for sizing (440,622 < 556,129)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SINDU",
+  "updated_at": "2025-12-01T23:43:07.246551"
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Zero-volume days exceed limit (16.8% > 15.4%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Zero-volume days exceed limit (16.8% > 15.4%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "NMB",
+  "updated_at": "2025-12-01T21:32:39.716489"
+}

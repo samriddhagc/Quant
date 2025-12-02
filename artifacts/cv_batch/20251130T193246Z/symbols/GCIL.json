@@ -1,0 +1,1888 @@
+{
+  "coefficients": [
+    {
+      "name": "Sector_Spread_PctRank",
+      "value": 2.223618838969413
+    },
+    {
+      "name": "ATR_Z",
+      "value": -0.8823125228925975
+    },
+    {
+      "name": "Drawdown_Z",
+      "value": -0.79827519306023
+    },
+    {
+      "name": "Roll_Skew",
+      "value": 0.760631978127536
+    },
+    {
+      "name": "Vol_Ratio_Z",
+      "value": -0.7242797278096718
+    },
+    {
+      "name": "Vol_Regime_Z",
+      "value": -0.7053330822837006
+    },
+    {
+      "name": "Volume_Z",
+      "value": -0.6810607296008597
+    },
+    {
+      "name": "Sharpe_30d_Z",
+      "value": -0.649962654225564
+    },
+    {
+      "name": "SmartMoney_Z",
+      "value": 0.5773570721637733
+    },
+    {
+      "name": "Range_Compression_Z",
+      "value": 0.4879637416227452
+    },
+    {
+      "name": "Regime_Intensity_Z",
+      "value": 0.4869775633705931
+    },
+    {
+      "name": "Sector_Corr_Z",
+      "value": 0.4575071666438034
+    },
+    {
+      "name": "Efficiency_Z",
+      "value": 0.45429717061624464
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Z",
+      "value": -0.4166279458696387
+    },
+    {
+      "name": "Sector_Momentum_Spread_Z",
+      "value": -0.40861318404918723
+    },
+    {
+      "name": "Sharpe_60d_Z",
+      "value": -0.3927198150301331
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_20d",
+      "value": -0.38208776662711164
+    },
+    {
+      "name": "Liquidity_Z",
+      "value": -0.353745306100227
+    },
+    {
+      "name": "ADX_Z",
+      "value": -0.3495847113572044
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationCarry_Z",
+      "value": 0.3428707270985938
+    },
+    {
+      "name": "Roll_Kurt",
+      "value": 0.33847887654582515
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_5d",
+      "value": -0.3025644779071155
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Z",
+      "value": -0.29630070483392923
+    },
+    {
+      "name": "Macro_cpi_2010_100_Z",
+      "value": 0.2963007048339266
+    },
+    {
+      "name": "Sector_Vol_Spread_Z",
+      "value": -0.27452257416159215
+    },
+    {
+      "name": "Macro_cpi_2010_100_InflationCarry_Z",
+      "value": 0.25646049169967494
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_InflationCarry_Z",
+      "value": -0.2564604916996748
+    },
+    {
+      "name": "Autocorr_Z",
+      "value": -0.2536574852378803
+    },
+    {
+      "name": "Sector_RelStrength_Z",
+      "value": -0.25024904195140246
+    },
+    {
+      "name": "Sector_Drawdown_Z",
+      "value": -0.2448183288155674
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Z",
+      "value": 0.21881918893333582
+    },
+    {
+      "name": "Macro_gdp_current_usd_Z",
+      "value": -0.21844932152531343
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Z",
+      "value": -0.21844932152520624
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Z",
+      "value": -0.2184493215251515
+    },
+    {
+      "name": "Sector_Corr_Interaction",
+      "value": 0.2088729039534577
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Momentum",
+      "value": 0.16058605243341045
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Momentum",
+      "value": -0.16058605243341043
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Momentum",
+      "value": 0.1605860524334104
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Momentum",
+      "value": 0.1605860524334104
+    },
+    {
+      "name": "Macro_gdp_current_usd_Momentum",
+      "value": 0.16058605243341037
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Corr_Z",
+      "value": 0.1514531874073316
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Corr_Z",
+      "value": -0.15145318740733107
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Z",
+      "value": 0.15075747705343925
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Spread_Z",
+      "value": 0.15060053368480225
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Beta_Z",
+      "value": -0.14578481020082373
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_20d",
+      "value": 0.12944750259988652
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Z",
+      "value": 0.1156963441202327
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Spread_Z",
+      "value": 0.11019039575017718
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Corr_Z",
+      "value": -0.10548776359437223
+    },
+    {
+      "name": "Macro_gdp_current_usd_Corr_Z",
+      "value": 0.10548776359437138
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Corr_Z",
+      "value": 0.10548776359437129
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Corr_Z",
+      "value": 0.10548776359437055
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Corr_Z",
+      "value": 0.10548776359436993
+    },
+    {
+      "name": "FracDiff_d0.55",
+      "value": -0.07728394346279975
+    },
+    {
+      "name": "Regime_Tag",
+      "value": -0.0735878548025502
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Beta_Z",
+      "value": -0.07303159546669483
+    },
+    {
+      "name": "Macro_cpi_2010_100_Momentum",
+      "value": -0.07034480361027255
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Momentum",
+      "value": 0.07034480361027255
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Spread_Z",
+      "value": 0.06527051869985497
+    },
+    {
+      "name": "Sector_Spread_Z",
+      "value": -0.05351472984567647
+    },
+    {
+      "name": "Sector_Trend_Interaction",
+      "value": 0.05228953603035686
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Beta_Z",
+      "value": 0.051836519370399715
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Beta_Z",
+      "value": 0.05018075499414268
+    },
+    {
+      "name": "Macro_gdp_current_usd_Beta_Z",
+      "value": 0.050174009097849546
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_5d",
+      "value": 0.048221213666446536
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_20d",
+      "value": -0.04351465099370844
+    },
+    {
+      "name": "Sector_Beta_Z",
+      "value": 0.030325986903643496
+    },
+    {
+      "name": "Trend_Strength",
+      "value": -0.02983876505875942
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationSensitivity_Z",
+      "value": -0.02924252912621304
+    },
+    {
+      "name": "RSI",
+      "value": -0.0287451197748498
+    },
+    {
+      "name": "Sector_Beta_Raw",
+      "value": 0.021533852805751354
+    },
+    {
+      "name": "Macro_cpi_2010_100_Corr_Z",
+      "value": 0.02045037075507597
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Corr_Z",
+      "value": -0.020450370755075747
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Momentum",
+      "value": 0.019896445212865294
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Momentum",
+      "value": -0.01989644521286525
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_5d",
+      "value": -0.016945575467200463
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Beta_Z",
+      "value": -0.016260188343887743
+    },
+    {
+      "name": "Macro_cpi_2010_100_Beta_Z",
+      "value": 0.01626018834388762
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Beta_Z",
+      "value": -0.015664297349389626
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Spread_Z",
+      "value": 0.01526433843713199
+    },
+    {
+      "name": "Sector_Corr_Raw",
+      "value": 0.014309714336880053
+    },
+    {
+      "name": "Macro_cpi_2010_100_Spread_Z",
+      "value": 0.013916869819415131
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Beta_Z",
+      "value": 0.008460034771466842
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_20d",
+      "value": -0.006330086581550794
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_20d",
+      "value": -0.006167212235783222
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_SectorBeta_Interaction",
+      "value": -0.0061482887519569655
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_20d",
+      "value": 0.006073138802462779
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_20d",
+      "value": 0.004301012380564849
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_20d",
+      "value": 0.004228381782615461
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_20d",
+      "value": 0.004226959480355698
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Spread_Z",
+      "value": -0.0032946947266482367
+    },
+    {
+      "name": "Macro_gdp_current_usd_Spread_Z",
+      "value": -0.0032502956453922633
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Spread_Z",
+      "value": -0.0032488435400057254
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_5d",
+      "value": 0.002666757837403342
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_5d",
+      "value": 0.0025796255599911137
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_5d",
+      "value": 0.002578925811434223
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Spread_Z",
+      "value": -0.0021545685652894983
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_5d",
+      "value": 0.0015691508827629587
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_SectorBeta_Interaction",
+      "value": 0.0009798835198431416
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_SectorBeta_Interaction",
+      "value": -0.0003443440940625248
+    },
+    {
+      "name": "Trend_Slope",
+      "value": -0.0001308622250308038
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_AssetRet_Interaction",
+      "value": 0.00011697562236760378
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_SectorBeta_Interaction",
+      "value": 5.419009306483583e-05
+    },
+    {
+      "name": "Macro_gdp_current_usd_SectorBeta_Interaction",
+      "value": 5.241951376599805e-05
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_SectorBeta_Interaction",
+      "value": 5.240529446235974e-05
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 3.1886071984883053e-05
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_AssetRet_Interaction",
+      "value": -1.8642989814836853e-05
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_AssetRet_Interaction",
+      "value": 6.551394434549237e-06
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_AssetRet_Interaction",
+      "value": -1.0310055558792512e-06
+    },
+    {
+      "name": "Macro_gdp_current_usd_AssetRet_Interaction",
+      "value": -9.973190092988195e-07
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_AssetRet_Interaction",
+      "value": -9.970484768043595e-07
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_AssetRet_Interaction",
+      "value": -6.066554883426232e-07
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_AssetRet_Interaction",
+      "value": 0.0
+    }
+  ],
+  "component_confidence": {
+    "Logistic (Fallback)": 0.5
+  },
+  "component_probs": {
+    "Logistic (Fallback)": 0.1363505586374175
+  },
+  "contributions": [
+    {
+      "name": "Sector_Spread_PctRank",
+      "value": 2.223618838969413
+    },
+    {
+      "name": "ATR_Z",
+      "value": -0.8823125228925975
+    },
+    {
+      "name": "Drawdown_Z",
+      "value": -0.79827519306023
+    },
+    {
+      "name": "Roll_Skew",
+      "value": 0.760631978127536
+    },
+    {
+      "name": "Vol_Ratio_Z",
+      "value": -0.7242797278096718
+    },
+    {
+      "name": "Vol_Regime_Z",
+      "value": -0.7053330822837006
+    },
+    {
+      "name": "Volume_Z",
+      "value": -0.6810607296008597
+    },
+    {
+      "name": "Sharpe_30d_Z",
+      "value": -0.649962654225564
+    },
+    {
+      "name": "SmartMoney_Z",
+      "value": 0.5773570721637733
+    },
+    {
+      "name": "Range_Compression_Z",
+      "value": 0.4879637416227452
+    },
+    {
+      "name": "Regime_Intensity_Z",
+      "value": 0.4869775633705931
+    },
+    {
+      "name": "Sector_Corr_Z",
+      "value": 0.4575071666438034
+    },
+    {
+      "name": "Efficiency_Z",
+      "value": 0.45429717061624464
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Z",
+      "value": -0.4166279458696387
+    },
+    {
+      "name": "Sector_Momentum_Spread_Z",
+      "value": -0.40861318404918723
+    },
+    {
+      "name": "Sharpe_60d_Z",
+      "value": -0.3927198150301331
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_20d",
+      "value": -0.38208776662711164
+    },
+    {
+      "name": "Liquidity_Z",
+      "value": -0.353745306100227
+    },
+    {
+      "name": "ADX_Z",
+      "value": -0.3495847113572044
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationCarry_Z",
+      "value": 0.3428707270985938
+    },
+    {
+      "name": "Roll_Kurt",
+      "value": 0.33847887654582515
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_5d",
+      "value": -0.3025644779071155
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Z",
+      "value": -0.29630070483392923
+    },
+    {
+      "name": "Macro_cpi_2010_100_Z",
+      "value": 0.2963007048339266
+    },
+    {
+      "name": "Sector_Vol_Spread_Z",
+      "value": -0.27452257416159215
+    },
+    {
+      "name": "Macro_cpi_2010_100_InflationCarry_Z",
+      "value": 0.25646049169967494
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_InflationCarry_Z",
+      "value": -0.2564604916996748
+    },
+    {
+      "name": "Autocorr_Z",
+      "value": -0.2536574852378803
+    },
+    {
+      "name": "Sector_RelStrength_Z",
+      "value": -0.25024904195140246
+    },
+    {
+      "name": "Sector_Drawdown_Z",
+      "value": -0.2448183288155674
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Z",
+      "value": 0.21881918893333582
+    },
+    {
+      "name": "Macro_gdp_current_usd_Z",
+      "value": -0.21844932152531343
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Z",
+      "value": -0.21844932152520624
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Z",
+      "value": -0.2184493215251515
+    },
+    {
+      "name": "Sector_Corr_Interaction",
+      "value": 0.2088729039534577
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Momentum",
+      "value": 0.16058605243341045
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Momentum",
+      "value": -0.16058605243341043
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Momentum",
+      "value": 0.1605860524334104
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Momentum",
+      "value": 0.1605860524334104
+    },
+    {
+      "name": "Macro_gdp_current_usd_Momentum",
+      "value": 0.16058605243341037
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Corr_Z",
+      "value": 0.1514531874073316
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Corr_Z",
+      "value": -0.15145318740733107
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Z",
+      "value": 0.15075747705343925
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Spread_Z",
+      "value": 0.15060053368480225
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Beta_Z",
+      "value": -0.14578481020082373
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_20d",
+      "value": 0.12944750259988652
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Z",
+      "value": 0.1156963441202327
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Spread_Z",
+      "value": 0.11019039575017718
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Corr_Z",
+      "value": -0.10548776359437223
+    },
+    {
+      "name": "Macro_gdp_current_usd_Corr_Z",
+      "value": 0.10548776359437138
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Corr_Z",
+      "value": 0.10548776359437129
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Corr_Z",
+      "value": 0.10548776359437055
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Corr_Z",
+      "value": 0.10548776359436993
+    },
+    {
+      "name": "FracDiff_d0.55",
+      "value": -0.07728394346279975
+    },
+    {
+      "name": "Regime_Tag",
+      "value": -0.0735878548025502
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Beta_Z",
+      "value": -0.07303159546669483
+    },
+    {
+      "name": "Macro_cpi_2010_100_Momentum",
+      "value": -0.07034480361027255
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Momentum",
+      "value": 0.07034480361027255
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Spread_Z",
+      "value": 0.06527051869985497
+    },
+    {
+      "name": "Sector_Spread_Z",
+      "value": -0.05351472984567647
+    },
+    {
+      "name": "Sector_Trend_Interaction",
+      "value": 0.05228953603035686
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Beta_Z",
+      "value": 0.051836519370399715
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Beta_Z",
+      "value": 0.05018075499414268
+    },
+    {
+      "name": "Macro_gdp_current_usd_Beta_Z",
+      "value": 0.050174009097849546
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_5d",
+      "value": 0.048221213666446536
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_20d",
+      "value": -0.04351465099370844
+    },
+    {
+      "name": "Sector_Beta_Z",
+      "value": 0.030325986903643496
+    },
+    {
+      "name": "Trend_Strength",
+      "value": -0.02983876505875942
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationSensitivity_Z",
+      "value": -0.02924252912621304
+    },
+    {
+      "name": "RSI",
+      "value": -0.0287451197748498
+    },
+    {
+      "name": "Sector_Beta_Raw",
+      "value": 0.021533852805751354
+    },
+    {
+      "name": "Macro_cpi_2010_100_Corr_Z",
+      "value": 0.02045037075507597
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Corr_Z",
+      "value": -0.020450370755075747
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Momentum",
+      "value": 0.019896445212865294
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Momentum",
+      "value": -0.01989644521286525
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_5d",
+      "value": -0.016945575467200463
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Beta_Z",
+      "value": -0.016260188343887743
+    },
+    {
+      "name": "Macro_cpi_2010_100_Beta_Z",
+      "value": 0.01626018834388762
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Beta_Z",
+      "value": -0.015664297349389626
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Spread_Z",
+      "value": 0.01526433843713199
+    },
+    {
+      "name": "Sector_Corr_Raw",
+      "value": 0.014309714336880053
+    },
+    {
+      "name": "Macro_cpi_2010_100_Spread_Z",
+      "value": 0.013916869819415131
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Beta_Z",
+      "value": 0.008460034771466842
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_20d",
+      "value": -0.006330086581550794
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_20d",
+      "value": -0.006167212235783222
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_SectorBeta_Interaction",
+      "value": -0.0061482887519569655
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_20d",
+      "value": 0.006073138802462779
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_20d",
+      "value": 0.004301012380564849
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_20d",
+      "value": 0.004228381782615461
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_20d",
+      "value": 0.004226959480355698
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Spread_Z",
+      "value": -0.0032946947266482367
+    },
+    {
+      "name": "Macro_gdp_current_usd_Spread_Z",
+      "value": -0.0032502956453922633
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Spread_Z",
+      "value": -0.0032488435400057254
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_5d",
+      "value": 0.002666757837403342
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_5d",
+      "value": 0.0025796255599911137
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_5d",
+      "value": 0.002578925811434223
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Spread_Z",
+      "value": -0.0021545685652894983
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_5d",
+      "value": 0.0015691508827629587
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_SectorBeta_Interaction",
+      "value": 0.0009798835198431416
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_SectorBeta_Interaction",
+      "value": -0.0003443440940625248
+    },
+    {
+      "name": "Trend_Slope",
+      "value": -0.0001308622250308038
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_AssetRet_Interaction",
+      "value": 0.00011697562236760378
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_SectorBeta_Interaction",
+      "value": 5.419009306483583e-05
+    },
+    {
+      "name": "Macro_gdp_current_usd_SectorBeta_Interaction",
+      "value": 5.241951376599805e-05
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_SectorBeta_Interaction",
+      "value": 5.240529446235974e-05
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 3.1886071984883053e-05
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_AssetRet_Interaction",
+      "value": -1.8642989814836853e-05
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_AssetRet_Interaction",
+      "value": 6.551394434549237e-06
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_AssetRet_Interaction",
+      "value": -1.0310055558792512e-06
+    },
+    {
+      "name": "Macro_gdp_current_usd_AssetRet_Interaction",
+      "value": -9.973190092988195e-07
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_AssetRet_Interaction",
+      "value": -9.970484768043595e-07
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_AssetRet_Interaction",
+      "value": -6.066554883426232e-07
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_AssetRet_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_AssetRet_Interaction",
+      "value": 0.0
+    }
+  ],
+  "cv_metrics": null,
+  "feature_importance": [
+    {
+      "Feature": "Sector_Spread_PctRank",
+      "Importance": 2.223618838969413
+    },
+    {
+      "Feature": "ATR_Z",
+      "Importance": -0.8823125228925975
+    },
+    {
+      "Feature": "Drawdown_Z",
+      "Importance": -0.79827519306023
+    },
+    {
+      "Feature": "Roll_Skew",
+      "Importance": 0.760631978127536
+    },
+    {
+      "Feature": "Vol_Ratio_Z",
+      "Importance": -0.7242797278096718
+    },
+    {
+      "Feature": "Vol_Regime_Z",
+      "Importance": -0.7053330822837006
+    },
+    {
+      "Feature": "Volume_Z",
+      "Importance": -0.6810607296008597
+    },
+    {
+      "Feature": "Sharpe_30d_Z",
+      "Importance": -0.649962654225564
+    },
+    {
+      "Feature": "SmartMoney_Z",
+      "Importance": 0.5773570721637733
+    },
+    {
+      "Feature": "Range_Compression_Z",
+      "Importance": 0.4879637416227452
+    },
+    {
+      "Feature": "Regime_Intensity_Z",
+      "Importance": 0.4869775633705931
+    },
+    {
+      "Feature": "Sector_Corr_Z",
+      "Importance": 0.4575071666438034
+    },
+    {
+      "Feature": "Efficiency_Z",
+      "Importance": 0.45429717061624464
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Z",
+      "Importance": -0.4166279458696387
+    },
+    {
+      "Feature": "Sector_Momentum_Spread_Z",
+      "Importance": -0.40861318404918723
+    },
+    {
+      "Feature": "Sharpe_60d_Z",
+      "Importance": -0.3927198150301331
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Return_20d",
+      "Importance": -0.38208776662711164
+    },
+    {
+      "Feature": "Liquidity_Z",
+      "Importance": -0.353745306100227
+    },
+    {
+      "Feature": "ADX_Z",
+      "Importance": -0.3495847113572044
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_InflationCarry_Z",
+      "Importance": 0.3428707270985938
+    },
+    {
+      "Feature": "Roll_Kurt",
+      "Importance": 0.33847887654582515
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Return_5d",
+      "Importance": -0.3025644779071155
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Z",
+      "Importance": -0.29630070483392923
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Z",
+      "Importance": 0.2963007048339266
+    },
+    {
+      "Feature": "Sector_Vol_Spread_Z",
+      "Importance": -0.27452257416159215
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_InflationCarry_Z",
+      "Importance": 0.25646049169967494
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_InflationCarry_Z",
+      "Importance": -0.2564604916996748
+    },
+    {
+      "Feature": "Autocorr_Z",
+      "Importance": -0.2536574852378803
+    },
+    {
+      "Feature": "Sector_RelStrength_Z",
+      "Importance": -0.25024904195140246
+    },
+    {
+      "Feature": "Sector_Drawdown_Z",
+      "Importance": -0.2448183288155674
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Z",
+      "Importance": 0.21881918893333582
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Z",
+      "Importance": -0.21844932152531343
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Z",
+      "Importance": -0.21844932152520624
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Z",
+      "Importance": -0.2184493215251515
+    },
+    {
+      "Feature": "Sector_Corr_Interaction",
+      "Importance": 0.2088729039534577
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Momentum",
+      "Importance": 0.16058605243341045
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Momentum",
+      "Importance": -0.16058605243341043
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Momentum",
+      "Importance": 0.1605860524334104
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Momentum",
+      "Importance": 0.1605860524334104
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Momentum",
+      "Importance": 0.16058605243341037
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Corr_Z",
+      "Importance": 0.1514531874073316
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Corr_Z",
+      "Importance": -0.15145318740733107
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Z",
+      "Importance": 0.15075747705343925
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Spread_Z",
+      "Importance": 0.15060053368480225
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Beta_Z",
+      "Importance": -0.14578481020082373
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Return_20d",
+      "Importance": 0.12944750259988652
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Z",
+      "Importance": 0.1156963441202327
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Spread_Z",
+      "Importance": 0.11019039575017718
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Corr_Z",
+      "Importance": -0.10548776359437223
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Corr_Z",
+      "Importance": 0.10548776359437138
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Corr_Z",
+      "Importance": 0.10548776359437129
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Corr_Z",
+      "Importance": 0.10548776359437055
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Corr_Z",
+      "Importance": 0.10548776359436993
+    },
+    {
+      "Feature": "FracDiff_d0.55",
+      "Importance": -0.07728394346279975
+    },
+    {
+      "Feature": "Regime_Tag",
+      "Importance": -0.0735878548025502
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Beta_Z",
+      "Importance": -0.07303159546669483
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Momentum",
+      "Importance": -0.07034480361027255
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Momentum",
+      "Importance": 0.07034480361027255
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Spread_Z",
+      "Importance": 0.06527051869985497
+    },
+    {
+      "Feature": "Sector_Spread_Z",
+      "Importance": -0.05351472984567647
+    },
+    {
+      "Feature": "Sector_Trend_Interaction",
+      "Importance": 0.05228953603035686
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Beta_Z",
+      "Importance": 0.051836519370399715
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Beta_Z",
+      "Importance": 0.05018075499414268
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Beta_Z",
+      "Importance": 0.050174009097849546
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Return_5d",
+      "Importance": 0.048221213666446536
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Return_20d",
+      "Importance": -0.04351465099370844
+    },
+    {
+      "Feature": "Sector_Beta_Z",
+      "Importance": 0.030325986903643496
+    },
+    {
+      "Feature": "Trend_Strength",
+      "Importance": -0.02983876505875942
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_InflationSensitivity_Z",
+      "Importance": -0.02924252912621304
+    },
+    {
+      "Feature": "RSI",
+      "Importance": -0.0287451197748498
+    },
+    {
+      "Feature": "Sector_Beta_Raw",
+      "Importance": 0.021533852805751354
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Corr_Z",
+      "Importance": 0.02045037075507597
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Corr_Z",
+      "Importance": -0.020450370755075747
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Momentum",
+      "Importance": 0.019896445212865294
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_Momentum",
+      "Importance": -0.01989644521286525
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Return_5d",
+      "Importance": -0.016945575467200463
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Beta_Z",
+      "Importance": -0.016260188343887743
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Beta_Z",
+      "Importance": 0.01626018834388762
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_Beta_Z",
+      "Importance": -0.015664297349389626
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Spread_Z",
+      "Importance": 0.01526433843713199
+    },
+    {
+      "Feature": "Sector_Corr_Raw",
+      "Importance": 0.014309714336880053
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Spread_Z",
+      "Importance": 0.013916869819415131
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_Beta_Z",
+      "Importance": 0.008460034771466842
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Return_20d",
+      "Importance": -0.006330086581550794
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Return_20d",
+      "Importance": -0.006167212235783222
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_SectorBeta_Interaction",
+      "Importance": -0.0061482887519569655
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Return_20d",
+      "Importance": 0.006073138802462779
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Return_20d",
+      "Importance": 0.004301012380564849
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Return_20d",
+      "Importance": 0.004228381782615461
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Return_20d",
+      "Importance": 0.004226959480355698
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Spread_Z",
+      "Importance": -0.0032946947266482367
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Spread_Z",
+      "Importance": -0.0032502956453922633
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Spread_Z",
+      "Importance": -0.0032488435400057254
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_Return_5d",
+      "Importance": 0.002666757837403342
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_Return_5d",
+      "Importance": 0.0025796255599911137
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_Return_5d",
+      "Importance": 0.002578925811434223
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Spread_Z",
+      "Importance": -0.0021545685652894983
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_Return_5d",
+      "Importance": 0.0015691508827629587
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_SectorBeta_Interaction",
+      "Importance": 0.0009798835198431416
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_SectorBeta_Interaction",
+      "Importance": -0.0003443440940625248
+    },
+    {
+      "Feature": "Trend_Slope",
+      "Importance": -0.0001308622250308038
+    },
+    {
+      "Feature": "Macro_current_account_pct_gdp_imf_AssetRet_Interaction",
+      "Importance": 0.00011697562236760378
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_SectorBeta_Interaction",
+      "Importance": 5.419009306483583e-05
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_SectorBeta_Interaction",
+      "Importance": 5.241951376599805e-05
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_SectorBeta_Interaction",
+      "Importance": 5.240529446235974e-05
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_SectorBeta_Interaction",
+      "Importance": 3.1886071984883053e-05
+    },
+    {
+      "Feature": "Macro_real_gdp_growth_imf_AssetRet_Interaction",
+      "Importance": -1.8642989814836853e-05
+    },
+    {
+      "Feature": "Macro_inflation_cpi_imf_AssetRet_Interaction",
+      "Importance": 6.551394434549237e-06
+    },
+    {
+      "Feature": "Macro_gdp_per_capita_usd_AssetRet_Interaction",
+      "Importance": -1.0310055558792512e-06
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_AssetRet_Interaction",
+      "Importance": -9.973190092988195e-07
+    },
+    {
+      "Feature": "Macro_gdp_current_usd_imf_AssetRet_Interaction",
+      "Importance": -9.970484768043595e-07
+    },
+    {
+      "Feature": "Macro_govt_debt_pct_gdp_imf_AssetRet_Interaction",
+      "Importance": -6.066554883426232e-07
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_AssetRet_Interaction",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "Macro_inflation_cpi_pct_Return_5d",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_Return_5d",
+      "Importance": 0.0
+    },
+    {
+      "Feature": "Macro_cpi_2010_100_AssetRet_Interaction",
+      "Importance": 0.0
+    }
+  ],
+  "latest_factors": [
+    {
+      "name": "FracDiff_d0.55",
+      "value": 9.831638977941168
+    },
+    {
+      "name": "Sharpe_30d_Z",
+      "value": 0.5976180224700266
+    },
+    {
+      "name": "Sharpe_60d_Z",
+      "value": 0.8016180190638768
+    },
+    {
+      "name": "ADX_Z",
+      "value": 1.166388827940923
+    },
+    {
+      "name": "Efficiency_Z",
+      "value": -1.039408338054644
+    },
+    {
+      "name": "Liquidity_Z",
+      "value": 1.0388002025616778
+    },
+    {
+      "name": "SmartMoney_Z",
+      "value": -0.9670692952710773
+    },
+    {
+      "name": "Vol_Regime_Z",
+      "value": 0.4103223040017279
+    },
+    {
+      "name": "Roll_Skew",
+      "value": 0.6938045916244447
+    },
+    {
+      "name": "Roll_Kurt",
+      "value": 1.445223644761345
+    },
+    {
+      "name": "Trend_Strength",
+      "value": -0.010358881596183589
+    },
+    {
+      "name": "Trend_Slope",
+      "value": 0.00012845303867402397
+    },
+    {
+      "name": "RSI",
+      "value": 44.52658199896594
+    },
+    {
+      "name": "Volume_Z",
+      "value": 1.9325189904483249
+    },
+    {
+      "name": "Range_Compression_Z",
+      "value": 2.1688234371758766
+    },
+    {
+      "name": "Regime_Intensity_Z",
+      "value": -1.4825248116724736
+    },
+    {
+      "name": "Regime_Tag",
+      "value": -1.0
+    },
+    {
+      "name": "ATR_Z",
+      "value": 0.10311467190868143
+    },
+    {
+      "name": "Vol_Ratio_Z",
+      "value": 1.3450440262170855
+    },
+    {
+      "name": "Autocorr_Z",
+      "value": -0.6431001813946531
+    },
+    {
+      "name": "Drawdown_Z",
+      "value": -0.3801028392173374
+    },
+    {
+      "name": "Sector_RelStrength_Z",
+      "value": -0.25553519060218766
+    },
+    {
+      "name": "Sector_Spread_Z",
+      "value": -0.6089444904604191
+    },
+    {
+      "name": "Sector_Vol_Spread_Z",
+      "value": 1.1987841092619573
+    },
+    {
+      "name": "Sector_Spread_PctRank",
+      "value": 0.5238095238095238
+    },
+    {
+      "name": "Sector_Momentum_Spread_Z",
+      "value": -0.8861339857667285
+    },
+    {
+      "name": "Sector_Beta_Raw",
+      "value": 0.9260444367932305
+    },
+    {
+      "name": "Sector_Corr_Raw",
+      "value": 0.47035634263488174
+    },
+    {
+      "name": "Sector_Beta_Z",
+      "value": 3.6885310093746293
+    },
+    {
+      "name": "Sector_Corr_Z",
+      "value": 1.6774542692531704
+    },
+    {
+      "name": "Sector_Trend_Interaction",
+      "value": -0.9425494745226255
+    },
+    {
+      "name": "Sector_Corr_Interaction",
+      "value": -0.4286485964200623
+    },
+    {
+      "name": "Sector_Drawdown_Z",
+      "value": -0.2949369939993702
+    },
+    {
+      "name": "Macro_gdp_current_usd_Z",
+      "value": 0.8503801127495899
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_Beta_Z",
+      "value": 2.2701987960654284
+    },
+    {
+      "name": "Macro_gdp_current_usd_Corr_Z",
+      "value": 2.190351587790864
+    },
+    {
+      "name": "Macro_gdp_current_usd_Spread_Z",
+      "value": -0.43193138495506417
+    },
+    {
+      "name": "Macro_gdp_current_usd_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Z",
+      "value": 0.8503801127496267
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Beta_Z",
+      "value": 2.2701987960631955
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Corr_Z",
+      "value": 2.1903515877908597
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_Spread_Z",
+      "value": -0.4319313849550642
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_gdp_per_capita_usd_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Beta_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Corr_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_Spread_Z",
+      "value": -0.43193138495506456
+    },
+    {
+      "name": "Macro_cpi_2010_100_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_cpi_2010_100_InflationCarry_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Beta_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Corr_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_Spread_Z",
+      "value": -0.43193138495506395
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_pct_InflationCarry_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Z",
+      "value": 0.8503801127496169
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Beta_Z",
+      "value": 2.2701987960613037
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Corr_Z",
+      "value": 2.190351587790862
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_Spread_Z",
+      "value": -0.4319313849550644
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_gdp_current_usd_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Z",
+      "value": 0.8503801127496066
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Beta_Z",
+      "value": 2.270198796061796
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Corr_Z",
+      "value": 2.1903515877908646
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_Spread_Z",
+      "value": -0.43193138495506406
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_real_gdp_growth_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Z",
+      "value": -0.8503801127496068
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Beta_Z",
+      "value": -2.2701987960618646
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Corr_Z",
+      "value": -2.190351587790868
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_Spread_Z",
+      "value": -0.43193138495506556
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationCarry_Z",
+      "value": -2.2930190814593083
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_inflation_cpi_imf_InflationSensitivity_Z",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Z",
+      "value": 0.8503801127496069
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Beta_Z",
+      "value": -2.270198796059471
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Corr_Z",
+      "value": -2.1903515877908735
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_Spread_Z",
+      "value": -0.4319313849550733
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_current_account_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Z",
+      "value": 0.8503801127494905
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_20d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Momentum",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Return_5d",
+      "value": 0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Beta_Z",
+      "value": 2.27019879606181
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Corr_Z",
+      "value": 2.1903515877908744
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_Spread_Z",
+      "value": -0.43193138495506433
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_AssetRet_Interaction",
+      "value": -0.0
+    },
+    {
+      "name": "Macro_govt_debt_pct_gdp_imf_SectorBeta_Interaction",
+      "value": 0.0
+    }
+  ],
+  "meta": {
+    "cv_score": 0.5,
+    "cv_std": null,
+    "message": "Fallback probability (limited history).",
+    "prob_edge": null,
+    "probability": 0.1363505586374175,
+    "warnings": [
+      "No Valid Training Data (fallback engaged) Using fallback logistic model (short history).",
+      "No Valid Training Data (fallback engaged) Using fallback logistic model (short history)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "GCIL",
+  "updated_at": "2025-11-30T19:41:43.010057"
+}

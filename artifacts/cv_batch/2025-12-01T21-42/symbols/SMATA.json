@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Median volume too low (286 < 761).; Median liquidity too low (114,540 < 300,000).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Median volume too low (286 < 761).; Median liquidity too low (114,540 < 300,000)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SMATA",
+  "updated_at": "2025-12-01T21:57:04.347094"
+}

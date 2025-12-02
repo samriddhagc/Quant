@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Median volume too low (2,718 < 3,964).; Median liquidity too low (1,867,551 < 2,634,884).; Zero-volume days exceed limit (0.1% > 0.1%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Median volume too low (2,718 < 3,964).; Median liquidity too low (1,867,551 < 2,634,884).; Zero-volume days exceed limit (0.1% > 0.1%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "ALBSL",
+  "updated_at": "2025-12-01T13:09:02.368975"
+}

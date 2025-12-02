@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (55.6% > 15.0%).; Median volume too low (4,287 < 4,362).",
+    "prob_edge": 0.0,
+    "probability": 0.5,
+    "warnings": [
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (55.6% > 15.0%).; Median volume too low (4,287 < 4,362).",
+      "Market regime FROZEN: Tradable breadth 1% < 20%; Flat sessions exceed limit (55.6% > 15.0%).; Median volume too low (4,287 < 4,362)."
+    ]
+  },
+  "probability_backtest": null,
+  "regime_info": {
+    "metrics": {
+      "median_flat_pct": 0.465622001918772,
+      "median_liquidity": 3682771.4,
+      "median_zero_volume_pct": 0.00036258158085569254,
+      "monitor": 172,
+      "total": 175,
+      "tradable": 1,
+      "tradable_ratio": 0.005714285714285714
+    },
+    "position_multiplier": 0.0,
+    "reason": "Tradable breadth 1% < 20%",
+    "state": "FROZEN"
+  },
+  "signal_history": null,
+  "symbol": "GFCL",
+  "symbol_health": {
+    "first_trade": "2015-12-06T00:00:00",
+    "flat_close_pct": 0.5558042852574352,
+    "healthy": false,
+    "median_liquidity": 1075705.68,
+    "median_volume": 4287.0,
+    "missing_close_pct": 0.0,
+    "position_multiplier": 0.0,
+    "reasons": [
+      "Flat sessions exceed limit (55.6% > 15.0%).",
+      "Median volume too low (4,287 < 4,362)."
+    ],
+    "symbol": "GFCL",
+    "tier": "tier3",
+    "tier_reason": "Flat sessions exceed limit (55.6% > 15.0%).",
+    "trading_days": 3127,
+    "zero_volume_pct": 0.0003197953309881676
+  },
+  "updated_at": "2025-12-01T02:35:51.112928"
+}

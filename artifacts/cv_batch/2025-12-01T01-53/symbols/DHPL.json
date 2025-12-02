@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (54.1% > 15.0%).; Median volume too low (5,848 < 8,154).; Median liquidity too low (986,592 < 3,003,495).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (54.1% > 15.0%).; Median volume too low (5,848 < 8,154).; Median liquidity too low (986,592 < 3,003,495)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "DHPL",
+  "updated_at": "2025-12-01T01:55:37.580921"
+}

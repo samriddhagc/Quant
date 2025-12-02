@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "ERROR: name 'max_splits' is not defined",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "ERROR: name 'max_splits' is not defined"
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "RLFL",
+  "updated_at": "2025-12-01T22:32:41.933111"
+}

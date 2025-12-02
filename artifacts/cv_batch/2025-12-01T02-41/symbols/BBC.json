@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (67.3% > 15.0%).; Median volume too low (191 < 500).; Median liquidity too low (578,200 < 1,076,219).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (67.3% > 15.0%).; Median volume too low (191 < 500).; Median liquidity too low (578,200 < 1,076,219)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "BBC",
+  "updated_at": "2025-12-01T02:43:19.381121"
+}

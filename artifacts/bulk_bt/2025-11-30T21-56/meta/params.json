@@ -1,0 +1,13 @@
+{
+  "artifacts_dir": "artifacts",
+  "cpu_workers": 24,
+  "io_workers": 24,
+  "job_name": "bulk_bt",
+  "limit": 153,
+  "slack_webhook": null,
+  "symbols": [
+    "SHIVM",
+    "NABIL"
+  ],
+  "symbols_file": null
+}

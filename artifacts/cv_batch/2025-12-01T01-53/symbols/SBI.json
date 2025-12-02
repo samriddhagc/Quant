@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Flat sessions exceed limit (45.7% > 15.0%).; Median volume too low (11,046 < 19,612).; Median liquidity too low (4,326,030 < 6,266,042).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Flat sessions exceed limit (45.7% > 15.0%).; Median volume too low (11,046 < 19,612).; Median liquidity too low (4,326,030 < 6,266,042)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "SBI",
+  "updated_at": "2025-12-01T01:55:37.602996"
+}

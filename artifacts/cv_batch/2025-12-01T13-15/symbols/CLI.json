@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "cv_score": null,
+    "cv_std": null,
+    "message": "Health gate rejection: Zero-volume days exceed limit (0.2% > 0.1%).",
+    "prob_edge": null,
+    "probability": null,
+    "warnings": [
+      "Health gate rejection: Zero-volume days exceed limit (0.2% > 0.1%)."
+    ]
+  },
+  "probability_backtest": null,
+  "signal_history": null,
+  "symbol": "CLI",
+  "updated_at": "2025-12-01T13:17:57.900772"
+}

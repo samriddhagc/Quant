@@ -1,0 +1,13 @@
+{
+  "backtest": null,
+  "meta": {
+    "cv_score": 0.5,
+    "cv_std": null,
+    "prob_edge": null,
+    "probability": 1.1063055597563231e-05,
+    "warning": "Insufficient depth for walk-forward CV. Using fallback logistic model (short history)."
+  },
+  "series": null,
+  "symbol": "BNHC",
+  "updated_at": "2025-11-30T16:19:08.721325"
+}
