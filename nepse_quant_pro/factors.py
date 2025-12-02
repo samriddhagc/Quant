@@ -1340,73 +1340,129 @@ __all__ = [
 def classify_model_quality(
     cv_score: float,
     cv_std: float,
-    sector_name: Optional[str],
-    prob_edge: Optional[float],
-    warnings: List[str],
+    sector_name: Optional[str] = None,
+    prob_edge: Optional[float] = None,
+    warnings: Optional[List[str]] = None,
 ) -> Tuple[str, float, List[str]]:
-    tier = "Silver"
-    trust = 1.0
+    """
+    NEPSE-tuned, *even less conservative* model quality classifier.
+
+    Parameters
+    ----------
+    cv_score : float
+        Purged walk-forward CV score (≈0.5 = random).
+    cv_std : float
+        Std. dev. of CV score across folds.
+    sector_name : Optional[str]
+        Sector label (for small nudges).
+    prob_edge : Optional[float]
+        Extra edge metric (e.g. from log-loss).
+    warnings : Optional[List[str]]
+        Pipeline warnings (used to detect calibration issues, etc.).
+
+    Returns
+    -------
+    tier : {"Quarantine","Paper","Marginal","Silver","Gold"}
+    trust_score : float in [0,1]
+    notes : list[str]
+    """
     notes: List[str] = []
+    warnings = warnings or []
 
-    if cv_score is None or np.isnan(cv_score):
-        return "Unrated", 0.0, ["Missing CV score."]
+    # --- Basic sanity handling ----------------------------------------------
+    if cv_score is None or (hasattr(math, "isnan") and math.isnan(cv_score)):
+        return "Quarantine", 0.0, ["Missing CV score; quarantined."]
 
-    if cv_score > 0.75:
-        if cv_std < 0.01:
-            tier = "Quarantine"
-            trust = 0.0
-            notes.append(f"Score {cv_score:.2f} with zero variance; quarantined.")
-        else:
-            tier = "Platinum"
-            trust = 0.85
-            notes.append(f"Exceptional signal strength ({cv_score:.2f}).")
-    elif 0.55 <= cv_score <= 0.75:
-        if cv_std > 0.15:
-            tier = "Bronze"
-            trust = 0.6
-            notes.append(f"High CV volatility ({cv_std:.2f}); reducing size.")
-        else:
-            tier = "Gold"
-            trust = 1.0
-            notes.append("Prime alpha candidate.")
-    
-    # --- RELAXED GOVERNANCE: The "Marginal" Tier ---
-    elif 0.51 <= cv_score < 0.55:
-        if cv_std < 0.10: # Only trust weak signals if they are stable
-            tier = "Marginal"
-            trust = 0.4
-            notes.append("Weak but stable edge; allowed with reduced size.")
-        else:
-            tier = "Paper"
-            trust = 0.0
-            notes.append("Weak edge + high variance = Noise.")
-            
-    elif cv_score < 0.51:
+    if cv_std is None or (hasattr(math, "isnan") and math.isnan(cv_std)):
+        cv_std = 0.20  # assume moderately noisy
+
+    # Edge from CV and optional prob_edge
+    cv_edge = max(0.0, (cv_score - 0.5))
+    extra_edge = max(0.0, prob_edge or 0.0)
+    edge = max(cv_edge, extra_edge)
+
+    # --- Hard quarantine ONLY for truly bad / pathological regimes ----------
+    # 1) Very low CV AND no meaningful edge
+    if cv_score < 0.47 and edge < 0.01:
+        notes.append("CV score below 0.47 with negligible edge; quarantined.")
+        return "Quarantine", 0.0, notes
+
+    # 2) Extremely unstable models
+    if cv_std > 0.45 and cv_score < 0.50:
+        notes.append("CV volatility above 0.45 with sub-random CV; quarantined.")
+        return "Quarantine", 0.0, notes
+
+    # Edge basically zero → still allowed, but only as tiny experimental tier
+    if edge < 0.002:
+        notes.append("Edge below 0.2 percentage points; effectively random.")
+        return "Paper", 0.10, notes
+
+    # --- Baseline tiering by CV score (very loose for NEPSE) ----------------
+    tier = "Silver"
+    trust = 0.5
+
+    if 0.47 <= cv_score < 0.50:
         tier = "Paper"
-        trust = 0.0
-        notes.append("No predictive edge (score < 0.51).")
+        trust = 0.25
+        notes.append("Near-random CV but not catastrophic; allow tiny sizing.")
+    elif 0.50 <= cv_score < 0.515:
+        tier = "Marginal"
+        trust = 0.35
+        notes.append("Weak but acceptable edge; starter tier.")
+    elif 0.515 <= cv_score < 0.53:
+        tier = "Silver"
+        trust = 0.55
+        notes.append("Moderate edge; default production tier.")
+    elif 0.53 <= cv_score < 0.57:
+        tier = "Gold"
+        trust = 0.75
+        notes.append("Strong edge across folds; high-confidence model.")
+    else:
+        tier = "Gold"
+        trust = 0.85
+        notes.append("Very strong CV score; candidate for heavier sizing.")
 
-    if prob_edge is not None and prob_edge < 0.01 and tier not in {"Quarantine", "Paper"}:
-        tier = "Bronze"
-        trust = min(trust, 0.6)
-        notes.append("Probability edge < 1%; weak conviction.")
+    # --- Volatility-aware adjustments ---------------------------------------
+    if cv_std < 0.08:
+        trust += 0.05
+        notes.append("Very stable across folds; boosting trust.")
+    elif cv_std > 0.25:
+        trust -= 0.10
+        notes.append("High CV volatility; trimming trust.")
+    if cv_std > 0.32:
+        trust -= 0.10
+        notes.append("Very high CV volatility; further trimming trust.")
 
-    if cv_std < 0.001 and tier not in {"Quarantine", "Paper"}:
-        tier = "Quarantine"
-        trust = 0.0
-        notes.append("CV std dev 0.0 indicates insufficient testing diversity.")
+    # --- Edge-based trimming / boost ----------------------------------------
+    if edge < 0.005:
+        trust = min(trust, 0.40)
+        notes.append("Edge is small; capping trust at 0.40.")
+    elif edge > 0.03:
+        trust += 0.05
+        notes.append("Unusually large edge; boosting trust slightly.")
 
-    if sector_name in {"Commercial Banks", "Promoter Share"} and tier == "Gold":
-        trust = 1.0
-        notes.append("Commercial bank signal validated (mean-reversion friendly).")
+    # --- Sector-aware nudging (NEPSE-specific intuition) --------------------
+    sec = (sector_name or "").lower()
 
-    if sector_name == "Hydropower" and cv_score > 0.70 and tier not in {"Quarantine", "Paper"}:
-        trust = min(trust, 0.7)
-        notes.append("Hydro momentum capped for volatility control.")
+    if "hydro" in sec:
+        trust = min(trust, 0.65)
+        notes.append("Hydropower: capping trust at 0.65 due to structural noise.")
+    elif "bank" in sec:
+        trust += 0.05
+        notes.append("Banking sector: structurally more liquid; nudging trust up.")
+    elif "micro" in sec or "microfinance" in sec:
+        trust = min(trust, 0.60)
+        notes.append("Microfinance: idiosyncratic risk; capping trust at 0.60.")
+    elif "investment" in sec or "holding" in sec:
+        trust = min(trust, 0.55)
+        notes.append("Investment / holding companies: conservative cap.")
 
+    # --- Calibration-related downgrades -------------------------------------
     if any("Calibr" in w for w in warnings) and tier == "Gold":
         tier = "Silver"
         trust = min(trust, 0.85)
         notes.append("Downgraded due to calibration issues.")
 
+    # Final clamp
+    trust = float(max(0.0, min(1.0, trust)))
     return tier, trust, notes

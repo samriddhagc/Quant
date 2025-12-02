@@ -286,14 +286,16 @@ def _compute_sector_liquidity_stats(
         global_samples.append(stats)
 
     # --- QUANT SAFEGUARDS (NEPSE SPECIFIC) ---
-    ABSOLUTE_MIN_VOL = 200.0       # Floor: Must trade 200 shares
-    ABSOLUTE_MIN_LIQ = 50_000.0    # Floor: Must trade 50k NPR
+    # --- QUANT SAFEGUARDS (NEPSE SPECIFIC) ---
+    ABSOLUTE_MIN_VOL = 100.0       # Lowered from 200
+    ABSOLUTE_MIN_LIQ = 20_000.0    # Lowered from 50k
     
-    # Ceiling: Never demand more than this for ELIGIBILITY. 
-    # If a stock trades 1M NPR/day, it is tradable, period.
-    ABSOLUTE_CAP_LIQ_REQ = 1_000_000.0 
+    # Ceiling: Relaxed significantly for NEPSE
+    # OLD: 1_000_000.0 
+    # NEW: 200_000.0 (2 Lakhs)
+    ABSOLUTE_CAP_LIQ_REQ = 200_000.0 
     
-    ABSOLUTE_MAX_ZERO_PCT = 0.45   # Allow up to 45% zero-volume days (Holidays)
+    ABSOLUTE_MAX_ZERO_PCT = 0.50   # Allow more zero-volume days
 
     global_volume = _quantile([s["median_volume"] for s in global_samples], 25, 1000.0)
     global_liquidity = _quantile([s["median_liquidity"] for s in global_samples], 25, 300_000.0)

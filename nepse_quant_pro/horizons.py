@@ -4,15 +4,16 @@ from .config import TRIPLE_BARRIER_HORIZON
 from .sectors import SECTOR_LOOKUP
 
 SECTOR_HORIZON_OVERRIDES = {
-    "Commercial Banks": 60,   # Macro & credit-cycle driven, slow drift
-    "Development Banks": 45,  # Mid-cap, some policy/theme momentum
-    "Finance": 30,            # High beta, reacts fast to sentiment
-    "Hydropower": 40,         # Volatile, story/narrative cycles need a bit more than 30
-    "Manufacturing": 60,      # Fundamentals change slowly
-    "Insurance": 75,          # Very slow repricing of expectations
-    "Microfinance": 45,       # Noisy but with medium-term themes
-    "Investment": 90,         # Holding-company / investment vehicles, very slow
+    "Commercial Banks": 45,   # Still medium-term, but more samples
+    "Development Banks": 40,
+    "Finance": 25,            # High beta, reacts quickly
+    "Hydropower": 30,      # Very noisy; shorter horizon helps
+    "Manufacturing": 60,
+    "Insurance": 60,       # Slow, but don’t starve yourself of folds
+    "Microfinance": 40,
+    "Investment": 75,         # Long slow movers can stay longer
 }
+
 
 
 
