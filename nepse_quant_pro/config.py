@@ -34,7 +34,7 @@ STRESS_ALLOC_CAP = 1.0
 
 # === TRIPLE BARRIER CONFIGURATION (YIELD HUNTER MODE) ===
 # Horizon: 63 Trading Days (~1 Quarter)
-TRIPLE_BARRIER_HORIZON = 63
+TRIPLE_BARRIER_HORIZON = 21
 
 # Profit Target: 1.25x Volatility to register dividend-driven pops.
 TRIPLE_BARRIER_PT_MULT = 1.25
