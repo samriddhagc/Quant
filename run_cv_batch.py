@@ -420,7 +420,10 @@ def _process_symbol(payload) -> dict:
         )
         if macro_series is not None and not macro_series.empty:
             macro_series = macro_series.reindex(df.index).ffill().bfill()
+        
+        # Ensure factor windows don't exceed data length or become too short relative to horizon
         long_window = max(26, min(156, len(df) // 4))
+        
         factors = build_factor_dataframe(
             price_df=df,
             log_returns=log_returns,
@@ -451,6 +454,9 @@ def _process_symbol(payload) -> dict:
         history_payload = _history_payload(model_result.history)
         backtest_payload = _simulate_probability_backtest(model_result.history, log_returns)
 
+        # Increase slippage assumption for post-CV validation
+        # Default is usually 30bps (0.3%). For better realism, we can optionally pass a higher value here.
+        # We'll stick to default for now as the main fix was the horizon calc, but keep it in mind.
         validation_info = run_post_cv_validation(
             model_result.history,
             log_returns,
@@ -706,7 +712,11 @@ def _run_batch(args):
 
     tasks = []
     for sym, df in model_data.items():
-        horizon = max(1, resolve_symbol_horizon(sym, args.horizon) // 5)
+        # --- CRITICAL FIX: REMOVE THE '// 5' DIVISOR ---
+        # OLD: horizon = max(1, resolve_symbol_horizon(sym, args.horizon) // 5)
+        # NEW: Respect the actual horizon argument so we don't train on 12-day noise when we want 60-day trend.
+        horizon = resolve_symbol_horizon(sym, args.horizon)
+        
         tasks.append(
             (
                 sym,
