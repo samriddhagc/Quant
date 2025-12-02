@@ -65,6 +65,35 @@ def james_stein_drift(stock_returns: pd.Series, market_returns: Optional[pd.Seri
         return mu_est * PERIODS_PER_YEAR
     return mu_est
 
+# --- NEPSE FEE CALCULATOR ---
+def calculate_nepse_transaction_cost(amount: float, is_buy: bool = True) -> float:
+    """
+    Calculates the total transaction cost percentage for a given trade amount 
+    based on NEPSE's tiered structure + SEBON + DP charges.
+    """
+    # 1. Broker Commission (Equity)
+    if amount <= 2500:
+        comm_amt = 10.0
+    elif amount <= 50000:
+        comm_amt = amount * 0.0036
+    elif amount <= 500000:
+        comm_amt = amount * 0.0033
+    elif amount <= 2000000:
+        comm_amt = amount * 0.0031
+    elif amount <= 10000000:
+        comm_amt = amount * 0.0027
+    else:
+        comm_amt = amount * 0.0024
+        
+    # 2. SEBON Fee
+    sebon_amt = amount * 0.00015
+    
+    # 3. DP Charge (Rs 25 per transaction)
+    dp_amt = 25.0
+    
+    total_cost = comm_amt + sebon_amt + dp_amt
+    return total_cost / amount if amount > 0 else 0.0
+
 # ==========================================
 # NUMBA KERNELS (High Performance loops)
 # ==========================================
@@ -510,7 +539,12 @@ def decision_engine(
     no_trade_threshold: float = NO_TRADE_UTILITY_THRESHOLD,
     regime: Optional[str] = None,
     regime_confidence: Optional[float] = None,
-    transaction_cost: float = 0.001,
+    # NEPSE TRANSACTION COST UPDATED: 
+    # Broker 0.40% + SEBON 0.015% + DP Fee ~0.05% + Slippage ~0.2% (One-way)
+    # Round Trip ~ 1.3% - 1.4%.
+    # We use 0.009 (0.9%) as the friction parameter to ensure wins are robust.
+    transaction_cost: float = 0.009,
+    cgt_tax_rate: float = 0.05, # Default 5% tax on gains (Holding > 1 year)
     win_loss_ratio: float = 1.0,
     kelly_scale: float = 0.5,
     trend_score: float = 1.0, 
@@ -519,11 +553,8 @@ def decision_engine(
 ) -> Tuple[str, float, float, float, List[str]]:
     """
     Institutional-Grade Decision Engine (Kelly-calibrated)
-
-    Rather than applying layered heuristics, we trust the calibrated
-    probability estimate and the Monte Carlo payoff distribution to determine
-    position sizing through a half-Kelly framework. This keeps behaviour
-    continuous and mathematically grounded.
+    
+    UPDATED: Includes Net-of-Fees and Tax-Aware Logic
     """
     reasons = []
     
@@ -540,16 +571,29 @@ def decision_engine(
     if terminal_returns is None or terminal_returns.size == 0:
         return "Neutral", 0.0, 0.0, fused_prob, reasons + ["No Monte Carlo paths provided"]
 
-    # --- Payoff Statistics ---------------------------------------------------
+    # --- Payoff Statistics (TAX AND FEE ADJUSTED) -----------------------------
+    # 1. Apply Transaction Costs (Round trip friction)
     net_paths = terminal_returns - transaction_cost
-    wins = net_paths[net_paths > 0]
+    
+    # 2. Separate Wins and Losses
+    # Tax is applied only to net gains (Sales - Cost - Fees).
+    # In percentage terms, if net_path > 0, we owe tax on that gain.
+    raw_wins = net_paths[net_paths > 0]
     losses = -net_paths[net_paths <= 0]
+    
+    # 3. Apply Capital Gains Tax (CGT) to Wins
+    wins = raw_wins * (1.0 - cgt_tax_rate)
 
     avg_win = float(wins.mean()) if wins.size else max(float(net_paths.mean()), 1e-4)
     avg_loss = float(losses.mean()) if losses.size else max(avg_win, 1e-4)
+    
+    # 4. Calculate Real Payoff Ratio
     payoff_ratio = avg_win / max(avg_loss, 1e-6)
 
-    reasons.append(f"Estimated Payoff Ratio (avg win / avg loss): {payoff_ratio:.2f}")
+    reasons.append(f"Net Payoff Stats (Fees: {transaction_cost:.1%}, Tax: {cgt_tax_rate:.1%})")
+    reasons.append(f"  • Avg Win (Net): {avg_win:.2%}")
+    reasons.append(f"  • Avg Loss (Net): {avg_loss:.2%}")
+    reasons.append(f"  • Payoff Ratio: {payoff_ratio:.2f}")
 
     # --- Kelly Sizing --------------------------------------------------------
     raw_kelly = fused_prob - ((1.0 - fused_prob) / payoff_ratio)
@@ -567,7 +611,7 @@ def decision_engine(
     reasons.append(f"Position Cap {kelly_cap * 100:.0f}% applied -> {final_size * 100:.1f}%")
 
     expected_edge = fused_prob * avg_win - (1.0 - fused_prob) * avg_loss
-    reasons.append(f"Expected Edge (per $1 risked): {expected_edge:.4f}")
+    reasons.append(f"Expected Edge (Net): {expected_edge:.4f}")
 
     if final_size <= 0.0:
         return "Avoid", 0.0, expected_edge, fused_prob, reasons
@@ -608,11 +652,12 @@ def evaluate_decision_rule(
     no_trade_threshold: float,
     regime_result: RegimeResult,
     top_factors: List[str],
-    transaction_cost: float = 0.001,
+    transaction_cost: float = 0.009, # UPDATED DEFAULT
+    cgt_tax_rate: float = 0.05,      # UPDATED DEFAULT
     win_loss_ratio: float = 1.0,
     kelly_scale: float = 0.5,
     sim_kurtosis: float = 0.0,
-    terminal_returns: Optional[np.ndarray] = None # Added for compatibility
+    terminal_returns: Optional[np.ndarray] = None 
 ) -> DecisionResult:
     if probability_of_gain is None:
         return DecisionResult("INSUFFICIENT DATA", ["Signal model unavailable; decision deferred."])
@@ -621,18 +666,16 @@ def evaluate_decision_rule(
         er_blended=er_blended,
         expected_shortfall=expected_shortfall,
         prob_gain=probability_of_gain,
-        terminal_returns=terminal_returns, # Pass through
+        terminal_returns=terminal_returns, 
         sim_kurtosis=sim_kurtosis,
         risk_aversion_lambda=risk_aversion_lambda,
         no_trade_threshold=no_trade_threshold,
         regime=regime_result.regime,
         regime_confidence=(regime_result.confidence / 100.0),
         transaction_cost=transaction_cost,
+        cgt_tax_rate=cgt_tax_rate,
         win_loss_ratio=win_loss_ratio,
         kelly_scale=kelly_scale,
-        # IMPORTANT: We cannot pass trend_score here because app.py calls this.
-        # But wait, app.py calls decision_engine directly in some versions?
-        # Assuming app.py calls decision_engine, we ensure decision_engine has the logic.
     )
     reasons.append(f"Fused probability of gain: {fused_prob:.1%}")
     reasons.append(f"Recommended allocation: {size*100:.1f}%")
@@ -658,5 +701,5 @@ __all__ = [
     "estimate_drift_er", "estimate_mc_er", "run_canonical_engine",
     "compute_horizon_er_es", "evaluate_failure_probability", "decision_engine",
     "compute_path_risk_metrics", "evaluate_decision_rule", "get_dynamic_params",
-    "get_dynamic_trading_params", "james_stein_drift"
+    "get_dynamic_trading_params", "james_stein_drift", "calculate_nepse_transaction_cost"
 ]
