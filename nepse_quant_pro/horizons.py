@@ -4,15 +4,16 @@ from .config import TRIPLE_BARRIER_HORIZON
 from .sectors import SECTOR_LOOKUP
 
 SECTOR_HORIZON_OVERRIDES = {
-    "Commercial Banks": 40,
-    "Development Banks": 35,
-    "Finance": 35,
-    "Hydropower": 20,
-    "Manufacturing": 45,
-    "Insurance": 50,
-    "Microfinance": 30,
-    "Investment": 45,
+    "Commercial Banks": 60,   # Macro & credit-cycle driven, slow drift
+    "Development Banks": 45,  # Mid-cap, some policy/theme momentum
+    "Finance": 30,            # High beta, reacts fast to sentiment
+    "Hydropower": 40,         # Volatile, story/narrative cycles need a bit more than 30
+    "Manufacturing": 60,      # Fundamentals change slowly
+    "Insurance": 75,          # Very slow repricing of expectations
+    "Microfinance": 45,       # Noisy but with medium-term themes
+    "Investment": 90,         # Holding-company / investment vehicles, very slow
 }
+
 
 
 def resolve_symbol_horizon(symbol: Optional[str], default: Optional[int] = None) -> int:
