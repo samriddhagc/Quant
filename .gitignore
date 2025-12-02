@@ -1,3 +1,18 @@
+# Ignore virtual environments
+.venv/
+venv/
+
+# Ignore job results & artifacts
+artifacts/
+jobs/
+*.json
+
+# Ignore cache & temporary files
+__pycache__/
+.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
 # Python
 __pycache__/
 *.pyc
