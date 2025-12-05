@@ -132,7 +132,7 @@ def initialize_portfolio():
 
 
 def update_pnl():
-    """Fetches live prices and calculates Net P&L (Mark-to-Market)."""
+    """Fetches live prices and calculates Unrealized P&L (Pre-Tax)."""
     if not os.path.exists(PORTFOLIO_FILE):
         print(f"❌ Error: {PORTFOLIO_FILE} not found. Run --action buy first.")
         return
@@ -141,19 +141,19 @@ def update_pnl():
     today = datetime.now().strftime("%Y-%m-%d")
     
     print(f"\n--- DAILY P&L UPDATE ({today}) ---")
-    print(f"{'Symbol':<10} {'Buy Price':<10} {'LTP':<10} {'Chg%':<8} {'Net Profit':<12}")
-    print("-" * 60)
+    print(f"{'Symbol':<10} {'Buy Price':<10} {'LTP':<10} {'Chg%':<8} {'Unrealized P&L':<15} {'Est. Tax':<10}")
+    print("-" * 75)
 
     daily_stats = []
     total_current_value = 0.0
-    total_net_profit = 0.0
+    total_unrealized_pnl = 0.0
+    total_est_tax = 0.0
 
     for idx, row in portfolio.iterrows():
         symbol = row['Symbol']
         qty = row['Quantity']
         buy_price = row['Buy_Price']
-        buy_fees = row['Buy_Fees']
-        cost_basis = row['Total_Cost_Basis']
+        cost_basis = row['Total_Cost_Basis'] # Includes Buy Fees
         
         # 1. Fetch Live Price
         try:
@@ -163,54 +163,50 @@ def update_pnl():
                 continue
             ltp = float(df_data['Close'].iloc[-1])
         except:
-            ltp = buy_price # Fallback
+            ltp = buy_price 
         
-        # 2. Calculate Sell Scenario (Hypothetical)
-        sell_amount = qty * ltp
-        sell_fees = NepseFees.calculate_total_fees(qty, ltp, is_buy=False)['total']
+        # 2. Calculate Market Value & Sell Fees
+        current_mkt_value = qty * ltp
+        # We estimate sell fees to give a realistic "Net Liquidation" view
+        est_sell_fees = NepseFees.calculate_total_fees(qty, ltp, is_buy=False)['total']
         
-        # 3. Calculate Taxes
-        # Net Gain for Tax = (Sell Amount - Sell Fees) - (Buy Amount + Buy Fees)
-        # Note: Tax is on the *Gain*, not the total value.
-        taxable_gain = (sell_amount - sell_fees) - cost_basis
+        # 3. Calculate Unrealized P&L (Pre-Tax)
+        # Unrealized P&L = (Current Value - Est Sell Fees) - (Buy Cost Basis)
+        unrealized_pnl = current_mkt_value - est_sell_fees - cost_basis
         
-        cgt_tax = 0.0
+        # 4. Calculate Est. Tax (Shadow Calculation)
+        # Tax is only calculated on the GAIN component
+        taxable_gain = (current_mkt_value - est_sell_fees) - cost_basis
+        est_tax = 0.0
         if taxable_gain > 0:
-            cgt_tax = NepseFees.calculate_tax(taxable_gain, holding_period_days=20)
+            est_tax = NepseFees.calculate_tax(taxable_gain, holding_period_days=0)
             
-        # 4. Net Profit (In Hand)
-        # Net Profit = Sell Amount - Sell Fees - Tax - Cost Basis
-        net_profit = sell_amount - sell_fees - cgt_tax - cost_basis
-        
         change_pct = (ltp - buy_price) / buy_price * 100
         
-        total_current_value += sell_amount
-        total_net_profit += net_profit
+        total_current_value += current_mkt_value
+        total_unrealized_pnl += unrealized_pnl
+        total_est_tax += est_tax
         
-        print(f"{symbol:<10} {buy_price:<10.2f} {ltp:<10.2f} {change_pct:^8.2f}% {net_profit:<12.2f}")
+        print(f"{symbol:<10} {buy_price:<10.2f} {ltp:<10.2f} {change_pct:^8.2f}% {unrealized_pnl:<15.2f} {est_tax:<10.2f}")
         
         daily_stats.append({
             "Date": today,
             "Symbol": symbol,
             "LTP": ltp,
-            "Net_Profit": net_profit,
-            "Tax_Paid": cgt_tax
+            "Unrealized_PnL": unrealized_pnl,
+            "Est_Tax_Liability": est_tax
         })
 
     # Log to history
     log_df = pd.DataFrame(daily_stats)
-    if not os.path.exists(PNL_LOG_FILE):
-        log_df.to_csv(PNL_LOG_FILE, index=False)
-    else:
-        log_df.to_csv(PNL_LOG_FILE, mode='a', header=False, index=False)
+    # Check if file exists/headers match, safer to append if exists, or create new
+    write_header = not os.path.exists(PNL_LOG_FILE)
+    log_df.to_csv(PNL_LOG_FILE, mode='a', header=write_header, index=False)
 
-    print("-" * 60)
-    print(f"📊 Portfolio Value: Rs. {total_current_value:,.2f}")
-    print(f"💵 Total Net P&L:   Rs. {total_net_profit:,.2f}")
-    if total_net_profit > 0:
-        print("🚀 STATUS: PROFITABLE")
-    else:
-        print("🔻 STATUS: LOSS")
+    print("-" * 75)
+    print(f"📊 Portfolio Value:   Rs. {total_current_value:,.2f}")
+    print(f"📈 Total Unrealized:  Rs. {total_unrealized_pnl:,.2f} (Pre-Tax)")
+    print(f"🏛️ Est. Tax Liability: Rs. {total_est_tax:,.2f} (If sold today)")
 
 def main():
     parser = argparse.ArgumentParser(description="NEPSE Paper Trading Tracker")
